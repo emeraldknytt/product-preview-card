@@ -1,0 +1,157 @@
+html {
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+  width: 75rem;
+  height: 56.25rem;
+  /* background-color: white; */
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 37.5rem 37.5rem;
+}
+
+/* .product-img {
+  width: 37.5rem;
+  height: 56.25rem;
+} */
+
+.product-img .desktop {
+  border-radius: 20px 0 0 20px;
+  width: 100%;
+  height: 100%;
+}
+.product-img .mobile {
+  display: none;
+}
+
+.product-info {
+  background-color: white;
+  border-radius: 0 20px 20px 0;
+  padding: 4rem;
+}
+
+.product-info h3 {
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: hsl(228, 12%, 48%);
+  margin: 0;
+}
+
+.product-info h2 {
+  font-family: Fraunces;
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: hsl(212, 21%, 14%);
+  line-height: 1;
+  margin: 2.5rem 0;
+}
+
+.product-info p {
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  color:  hsl(228, 12%, 48%);
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.product-price h2 {
+  color: hsl(158, 36%, 37%);
+  margin: 0;
+}
+
+.product-price p {
+  text-decoration: line-through;
+}
+
+.product-info button {
+  width: 100%;
+  height: 5.5rem;
+  border: none;
+  border-radius: 10px;
+  background-color: hsl(158, 36%, 37%);
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.product-info button:hover {
+  background-color: hsl(212, 21%, 14%);
+  cursor: pointer;
+}
+
+@media (max-width: 375px) {
+
+  body {
+    margin: 4rem 0;
+  }
+  main {
+    width: 100%;
+    height: 80%;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1.5fr;
+  }
+  
+  .product-img .desktop {
+    display: none;
+  }
+
+  .product-img .mobile {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .product-info {
+    border-radius: 0 0 20px 20px;
+    padding: 2rem;
+  }
+
+  .product-info h3 {
+    font-size: 1rem;
+  }
+
+  .product-info h2 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+  }
+
+  .product-info p {
+    font-size: 1rem;
+    letter-spacing: 0.04rem;
+  }
+
+  .product-price {
+    margin: 1rem 0;
+  }
+
+  .product-info button {
+    height: 3.5rem;
+  }
+}
